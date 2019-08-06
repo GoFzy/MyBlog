@@ -1,0 +1,24 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "pub": "sh deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoFzy/MyBlog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoFzy/MyBlog/issues"
+  },
+  "homepage": "https://github.com/GoFzy/MyBlog#readme",
+  "devDependencies": {
+    "vuepress": "^1.0.3"
+  }
+}
