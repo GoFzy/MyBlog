@@ -1,11 +1,15 @@
 // 个人介绍
-const AboutMe = require('./about-me/index');
-
+const AboutMe = require('./about-me');
 
 // 读书笔记
-const ES6 = require('./reading/es6/index');
-const DesignPatterns = require('./reading/design-patterns/index');
-const Reading = require('./reading/index');
+const ES6 = require('./reading/es6');
+const DesignPatterns = require('./reading/design-patterns');
+const Reading = require('./reading');
+
+// 源码学习
+const React = require('./source-code/react');
+const Koa2 = require('./source-code/Koa2');
+const sourceCode = require('./source-code');
 
 /**
  * 侧边栏的配置
@@ -23,5 +27,10 @@ module.exports = {
     '/reading/es6/': ES6,
     '/reading/design-patterns/': DesignPatterns,
     '/reading/': Reading,
+
+    //源码学习
+    '/source-code/react/': React,
+    '/source-code/koa2/': Koa2,
+    '/source-code/': sourceCode
 }
 
