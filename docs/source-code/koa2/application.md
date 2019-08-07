@@ -46,7 +46,7 @@ module.exports = class Application extends Emitter {
 		this.proxy = false;             //它的作用在于是否获取真正的客户端 ip 地址
 		this.middleware = [];           //保存通过app.use注册的中间件
 		this.subdomainOffset = 2;       //subdomainOffset 属性会改变获取 subdomain 时返回数组的值,
-																		//比如 test.page.example.com 域名, 如果设置 subdomainOffset 为 2, 那么返回的数组值为 ["page", "test"], 如果设置为 3, 那么返回数组值为 ["test"].
+		                                //比如 test.page.example.com 域名, 如果设置 subdomainOffset 为 2, 那么返回的数组值为 ["page", "test"], 如果设置为 3, 那么返回数组值为 ["test"].
 		this.env = process.env.NODE_ENV || 'development';   //环境参数
 		this.context = Object.create(context);              //context模块，通过 context.js 创建
 		this.request = Object.create(request);              //request模块，通过 request.js 创建
@@ -80,8 +80,6 @@ module.exports = class Application extends Emitter {
 
 ### 1.1 listen
 首先我们来看一下 `listen` 方法，其内部通过 `http.createServer` 创建了一个 `http` 服务实例，然后通过这个实例的 `listen` 方法监听端口号，需要注意的是在创建服务实例时，将`this.callback()` 作为参数传入，接下来我们看看这个实例 `callback` 方法中有什么吧
-
-#### this.callback
 ```js
 // application.js
 module.exports = class Application extends Emitter {

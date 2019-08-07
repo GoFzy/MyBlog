@@ -1,3 +1,4 @@
+require('module-alias/register');
 // 个人介绍
 const AboutMe = require('./about-me');
 

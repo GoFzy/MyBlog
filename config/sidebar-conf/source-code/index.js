@@ -1,7 +1,7 @@
-const sidebar = require('../../../utils/sidebar');
+const sidebar = require('@vUtil/sidebar')
 const children = [
-    ['react/', 'React源码学习'],
-    ['koa2/', 'Koa2源码学习'],
+    ['react/', '1. React'],
+    ['koa2/', '2. Koa2'],
     ['../', '返回主页面'],
 ];
 

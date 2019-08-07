@@ -15,9 +15,10 @@ echo "gofzy.com" > CNAME
 
 git init
 git add .
-git commit -m '添加CNAME文件'
+git commit -m '发布更新'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:gofzy/gofzy.github.io.git master
 
-cd -
+cd ..
+rm -rf dist

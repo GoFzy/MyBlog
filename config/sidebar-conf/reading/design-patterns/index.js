@@ -1,4 +1,4 @@
-const sidebar = require('../../../../utils/sidebar');
+const sidebar = require('@vUtil/sidebar')
 const children = [
     ['prototypical', '1.原型继承'],
     ['about-this', '2.this、apply和call'],

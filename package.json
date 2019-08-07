@@ -19,6 +19,13 @@
   },
   "homepage": "https://github.com/GoFzy/MyBlog#readme",
   "devDependencies": {
+    "module-alias": "^2.2.1",
     "vuepress": "^1.0.3"
-  }
+  },
+  "_moduleAliases": {
+    "@vUtil": "config/utils",
+    "@navbar": "config/navbar-conf",
+    "@sidebar": "config/sidebar-conf"
+  },
+  "_moduleDirectories": ["node_modules_custom"]
 }
