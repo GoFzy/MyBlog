@@ -9,10 +9,13 @@ npm run docs:build
 # 进入生成的文件夹
 cd docs/.vuepress/dist
 
+# 发布到自定义域名
+touch CNAME
+echo "gofzy.com" > CNAME
 
 git init
-git add -A
-git commit -m 'deploy'
+git add .
+git commit -m '添加CNAME文件'
 
 # 如果发布到 https://<USERNAME>.github.io
 git push -f git@github.com:gofzy/gofzy.github.io.git master
