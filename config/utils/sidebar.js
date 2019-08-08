@@ -1,15 +1,15 @@
 const siderbar = {
-    genSidebar: function (router, title, children = [''], collapsable = true, sidebarDepth = 1) {
-        return [
-            router,
-            {
-                title,
-                collapsable,
-                sidebarDepth,
-                children
-            }
-        ]
-    }
+  genSidebar: function (router, children = ['']) {
+    return [
+      router,
+      {
+        title: '',
+        collapsable: false,
+        sidebarDepth: 1,
+        children
+      }
+    ]
+  }
 };
 
 module.exports = siderbar;
