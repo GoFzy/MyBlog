@@ -11,7 +11,12 @@ module.exports = {
 	),
 	ES6: sidebar.genSidebar(
 		'/reading/es6/', 
-		[], 
+		[
+      ['promise', 'Promise对象'],
+      ['generator', 'Generator函数'],
+      ['async', 'async函数'],
+      ['../', '返回上一级'],
+    ],
 	),
 	DesignPatterns: sidebar.genSidebar(
 		'/reading/design-patterns/', 

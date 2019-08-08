@@ -38,7 +38,7 @@ function respond(ctx) {...}         // 对请求的响应进行处理
 * 第一部分是暴露了一个 `Application` 类供我们使用, 也就是说我们 `new` 一个 `koa` 对象实质上就是新建一个 `Application` 的实例对象. 而 ` Application` 类是继承于 `Node.js events` 模块, 所以我们在 `koa` 实例对象上可以使用 `on`, `emit` 等方法进行事件监听
 * 第二部分是使用 `respond` 函数对响应内容进行处理
 
-## 一、Application 类
+## Application 类
 ```js
 module.exports = class Application extends Emitter {
   constructor() {
@@ -129,7 +129,7 @@ handleRequest(ctx, fnMiddleware) {
 ① 通过生成一个新的 `context` 对象并建立 `koa` 中 `context、 request、response` 属性之间与原生 `http` 对象的关系；  
 ② 通过 `handleRequest` 函数执行中间件所有的函数，并在中间件函数执行结束时调用 `respond`
 
-## 二、respond
+## respond
 对于 `respond` 函数，其核心就是根据不同类型的数据对 `http` 的响应头与响应体进行处理:
 ```js
 function respond(ctx) {

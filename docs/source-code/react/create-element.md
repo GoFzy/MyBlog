@@ -86,7 +86,7 @@ function Demo(props) {
 }
 ```
 然后在源码中打下断点：
-![源码](https://upload-images.jianshu.io/upload_images/16681606-0adc86f8ae325c55.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![children-len](https://raw.githubusercontent.com/GoFzy/pic-bed/master/children-len.png)  
 可以看到在创建 `#demo` 元素时此时传入了2个 `children` ，因此之后 `props.children` 属性将会设置为数组。此外在调试过程中发现在创建 `Demo` 组件时多次执行了 `createElement` 函数，具体的执行顺序是 `function Demo` -> `#son1` ->  `#son2` -> `#demo`，即**由内而外**的顺序  
 最后就是返回了一个 `ReactElement` 对象
 ```js
@@ -109,7 +109,7 @@ var ReactElement = function (type, key, ref, self, source, owner, props) {
 ```
 内部代码很简单，核心就是通过 `$$typeof` 来帮助我们识别这是一个 `ReactElement`，后面我们可以看到很多这样类似的类型。另外我们需要注意一点的是：通过 `JSX` 写的 `<APP />` 代表着 `ReactElement`，`APP` 代表着 `React Component`。  
 这节内容小结：
-![小结](https://upload-images.jianshu.io/upload_images/16681606-c645097d410a6915.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![create-element](https://camo.githubusercontent.com/eec0484a78af958b491c3e4e98da0efab1d5866e/68747470733a2f2f79636b2d313235343236333432322e636f732e61702d7368616e676861692e6d7971636c6f75642e636f6d2f626c6f672f323031392d30362d30312d3033323430312e706e67)  
 
 参考文章:
 * <https://juejin.im/post/5983dfbcf265da3e2f7f32de>

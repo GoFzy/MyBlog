@@ -16,7 +16,7 @@ module.exports = {
 			['../', '返回上一级'],
 		], 
 	),
-	koa2: sidebar.genSidebar(
+	Koa2: sidebar.genSidebar(
 		'/source-code/koa2/', 
 		[
 			['application', '1.框架入口application'],
