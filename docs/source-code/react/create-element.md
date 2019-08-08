@@ -7,7 +7,7 @@
 //上面 JSX 代码会被 babel 编译成这样
 React.createElement("div", { id : demo },  "1" );
 ```
-那么我们就从在源码中看看它是如何定义的吧，`React` 版本为16.8.6，文件位置 `/node_modules/react/cjs/react.development.js`。 首先在源码中搜索 `createElement` , 可以在整个 `React` 对象上找到该属性:
+那么我们就从在源码中看看它是如何定义的吧，`React` 版本为16.8.6，文件位置 `/node_modules/react/cjs/react.development.js`。 首先在源码中搜索 `createElement` , 可以在 `React` 对象上找到该属性:
 ```js
 var React = {
   ...

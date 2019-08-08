@@ -8,5 +8,5 @@ Koa
 │     ├── request.js        request对象的原型，提供请求方法和属性
 │     ├── response.js       response对象的原型，提供响应方法和属性
 ```
-
-* [1. application 框架入口](./application)
+* [application 框架入口](./application)
+* [koa-compose 中间件机制](./koa-compose)
