@@ -109,7 +109,7 @@ var ReactElement = function (type, key, ref, self, source, owner, props) {
 ```
 内部代码很简单，核心就是通过 `$$typeof` 来帮助我们识别这是一个 `ReactElement`，后面我们可以看到很多这样类似的类型。另外我们需要注意一点的是：通过 `JSX` 写的 `<APP />` 代表着 `ReactElement`，`APP` 代表着 `React Component`。  
 这节内容小结：
-![create-element](https://camo.githubusercontent.com/eec0484a78af958b491c3e4e98da0efab1d5866e/68747470733a2f2f79636b2d313235343236333432322e636f732e61702d7368616e676861692e6d7971636c6f75642e636f6d2f626c6f672f323031392d30362d30312d3033323430312e706e67)  
+![create-element](https://raw.githubusercontent.com/GoFzy/pic-bed/master/create-element.png)  
 
 参考文章:
 * <https://juejin.im/post/5983dfbcf265da3e2f7f32de>

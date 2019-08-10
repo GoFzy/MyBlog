@@ -2,3 +2,4 @@
 
 * [1. React.createElement](./create-element)
 * [2. React.Component与React.PureComponent](./react.component)
+* [3. ReactDOM.render](./reactdom.render)
