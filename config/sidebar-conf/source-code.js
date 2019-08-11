@@ -23,6 +23,7 @@ module.exports = {
 		[
 			['application', '1. 框架入口application'],
 			['koa-compose', '2. koa-compose 中间件机制'],
+			['koa-router-layer', '3. koa-router 路由模块(1)'],
 			['../', '返回上一级'],
 		], 
 	)
