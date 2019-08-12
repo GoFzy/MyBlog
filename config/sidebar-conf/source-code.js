@@ -14,7 +14,8 @@ module.exports = {
 		[
 			['create-element', '1. React.createElement'],
 			['react.component', '2. React.Component'],
-			['reactdom.render', '3. ReactDOM.render'],
+			['reactdom.render', '3. ReactDOM.render(1)'],
+			['reactdom.render2', '4. ReactDOM.render(2)'],
 			['../', '返回上一级'],
 		], 
 	),

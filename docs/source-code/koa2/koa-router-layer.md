@@ -1,4 +1,4 @@
-# koa2路由中间件--koa-router(一)
+# koa2路由中间件--koa-router(1)
 关于 `koa-router` 的基本使用可以看我 `GitHub` 上的 [`Koa2` 最小系统项目](https://github.com/GoFzy/Koa2-demo)  
 `koa-router` 的源码只有两个文件：`router.js` 和 `layer.js`，分别对应 `Router` 对象和 `Layer` 对象
 * `Layer` 对象是对单个路由的管理，其中包含的信息有路由路径(`path`)、路由请求方法(`method`)和路由执行函数(`middleware`)，并且提供路由的验证以及 `params` 参数解析的方法

@@ -1,4 +1,4 @@
-# ReactDOM.render
+# ReactDOM.render(1)
 想必大家在写 `React` 项目的时候都写过类似的代码:
 ```js
 ReactDOM.render(<APP />, document.getElementById('root')
