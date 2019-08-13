@@ -4,9 +4,9 @@ heroImage: /logo.jpg
 actionText:  个人介绍
 actionLink: /about-me/
 features:
-- title: 缩短操作链路
-  details: 一行命令快速生成业务，便于协同开发者添加新组件
-- title: 个性化组件
-  details: 个性化定制组件及其功能
+- title: GoFzy的博客
+  details: 一个没想过会进入前端的giser
+- title: 关于我
+  details: 毕业于左家垅男子职业技术学院，目前就读于珞珈山职业技术学院
 footer: Copyright © 2019
 ---
