@@ -33,14 +33,14 @@
 - 服务端: 了解`Node.js`，会使用`Koa2`框架进行中间件以及接口的开发
 
 
-## <img :src="$withBase('/resume/project-diagram-solid.svg')" width="30px"> 项目经历
+## <img :src="$withBase('/resume/project-diagram-solid.svg')" width="30px"> 实习经历
 
 - <div style="display: flex; justify-content: space-between; font-weight: 700">
     <div>腾讯PCG浏览器平台应用中心&emsp;小说页面生成系统</div>
     <div>2019年6月-2019年8月</div>
   </div>   
 
-  **项目概述**  
+  **系统概述**  
 为产品、运营同学提供快速配置、生成页面的能力，其本质上是提高生产力的工具。系统关注点在于
   * 对于使用者，降低其学习门槛，简单的拖拽组件即可快速生成页面
   * 对于开发者，提供一种自动化开发模式，便于规范化地扩展新组件
