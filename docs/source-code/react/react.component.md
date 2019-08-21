@@ -61,17 +61,51 @@ class ThemedButton extends React.Component {
 此外，在调试的过程中，发现 `React.Component` 只会在 `Class` 组件定义时被调用，函数组件不会(因为`function` 直接返回了 `ReactElement`)
 
 ## React.PureComponent
-接下来我们来阅读 `PureComponent` 中的代码，其实这部分的代码基本与 `Component` 一致:
+`PureComponent` 源码分析会在之后补上，这里我们先来回顾一下 `React.Component` 与 `React.PureComponent` 之间的区别  
+* `React.Component` 没有实现 `shouldComponentUpdate()` ，因此我们有时候需要自己定义该生命周期函数
+* `React.PureComponent` 通过 `props` 和 `state` 的**浅比较**实现了
+
+比如我们想实现一个 `shouldComponentUpdata()` 方法来避免不必要的组件更新，优化性能：
 ```js
-function PureComponent(props, context, updater) {
-  this.props = props;
-  this.context = context;
-  this.refs = emptyObject;
-  this.updater = updater || ReactNoopUpdateQueue;
+//React.Component 方式
+class CounterButton extends React.Component {
+  state = {
+    count: 1
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.color !== nextProps.color) {
+      return true;
+    }
+    if (this.state.count !== nextState.count) {
+      return true;
+    }
+    return false;
+  }
+  render() {
+    return (
+      <button
+        color={this.props.color}
+        onClick={() => this.setState(state => ({count: state.count + 1}))}>
+        Count: {this.state.count}
+      </button>
+    );
+  }
 }
-var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
-pureComponentPrototype.constructor = PureComponent;
-_assign(pureComponentPrototype, Component.prototype);
-pureComponentPrototype.isPureReactComponent = true;
+
+//React.PureComponent方式
+class CounterButton extends React.PureComponent {
+  state = {
+    count: 1
+  }
+  render() {
+    return (
+      <button
+        color={this.props.color}
+        onClick={() => this.setState(state => ({count: state.count + 1}))}>
+        Count: {this.state.count}
+      </button>
+    );
+  }
+}
 ```
-我们可以看到 `PureComponent` 继承自 `Component`，继承方法使用了很典型的寄生组合式。另外这两部分代码你可以发现每个组件都有一个 `isXXXX` 属性用来标志自身属于什么组件。
+相比之下，`React.PureComponent` 更加直观和简便  

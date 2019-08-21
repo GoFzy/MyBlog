@@ -2,7 +2,7 @@
 大家在写 `React` 代码的时候肯定写过 `JSX`，但是为什么一旦使用 `JSX` 就必须引入 `React` 呢？
 这是因为我们的 `JSX` 代码会被 `Babel` 编译为 `React.createElement`，不引入 `React` 的话就不能使用 `React.createElement` 了
 ```js
-<div id="demo">demo</div>
+<div id="demo">1</div>
 
 //上面 JSX 代码会被 babel 编译成这样
 React.createElement("div", { id : demo },  "1" );
@@ -26,7 +26,8 @@ function createElementWithValidation(type, props, children) {
 找到 `createElementWithValidation` 函数，该函数接收三个参数 `type props children`。 结合 `demo` 组件，个人理解:  
 * type: 组件的类型
 * props: 组件的属性
-* children: 组件的内容
+* children: 组件的内容  
+
 在该函数中主要是对传入的 `type` 和 `props` 参数进行验证，并没有创建内容，所以我们把关注重点放在 `createElement` 函数的实现上。
 
 ## createElement
