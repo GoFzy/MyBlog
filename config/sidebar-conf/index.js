@@ -8,6 +8,9 @@ const { ES6, DesignPatterns, Reading } = require('./reading');
 // 源码学习
 const { React, Koa2, SourceCode } = require('./source-code');
 
+//知识体系
+const { frontEnd } = require('./front-end');
+
 /**
  * 侧边栏的配置
  * 当路由深度越深时应当排序在更前方
@@ -28,6 +31,12 @@ module.exports = {
 	//源码学习
 	'/source-code/react/': React,
 	'/source-code/koa2/': Koa2,
-	'/source-code/': SourceCode
+	'/source-code/': SourceCode,
+
+	//前端知识体系
+	'/front-end/': frontEnd,
+
+
+
 }
 

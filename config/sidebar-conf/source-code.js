@@ -28,5 +28,5 @@ module.exports = {
 			['./koa-router-router', '4. koa-router 路由模块(2)'],
 			['../', '返回上一级'],
 		], 
-	)
+	),
 };
