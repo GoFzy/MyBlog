@@ -26,7 +26,8 @@ module.exports = {
 			['closure', '3.闭包和高阶函数'],
 			['singleton', '4.单例模式'],
       ['strategy-pattern', '5.策略模式'],
-      ['template-method', '6.模板方法模式'],
+			['template-method', '6.模板方法模式'],
+			['publish-subscribe', '7.发布订阅模式'],
 			['../', '返回上一级'],
 		], 
 	)

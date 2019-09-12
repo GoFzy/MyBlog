@@ -8,5 +8,6 @@ ___
 * [单例模式](./singleton)
 * [模板方法模式](./template-method)
 * [策略模式](./strategy-pattern)
+* [发布-订阅模式](./publish-subscribe)
 
 
