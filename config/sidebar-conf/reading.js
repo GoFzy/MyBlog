@@ -14,7 +14,8 @@ module.exports = {
 		[
       ['promise', 'Promise对象'],
       ['generator', 'Generator函数'],
-      ['async', 'async函数'],
+			['async', 'async函数'],
+      ['set-weakset', 'Set 与 WeakSet数据结构'],
       ['../', '返回上一级'],
     ],
 	),
