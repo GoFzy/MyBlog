@@ -29,4 +29,11 @@ module.exports = {
 			['../', '返回上一级'],
 		], 
 	),
+	Redux: sidebar.genSidebar(
+		'/source-code/redux/', 
+		[
+			['create-store', '1. createStore 创建Store'], 
+			['../', '返回上一级'],
+		], 
+	)
 };
