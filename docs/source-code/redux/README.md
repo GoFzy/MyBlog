@@ -12,3 +12,4 @@
 ```
 对于入口文件 `index.js` ，内部实现只是单纯的将上述模块作为对象进行导出，所以这里直接对各个模块进行分析:
 * [createStore 创建Store](./create-store)
+* [redux 中间件机制](./compose-middleware)

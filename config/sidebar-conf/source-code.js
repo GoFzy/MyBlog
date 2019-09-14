@@ -5,7 +5,8 @@ module.exports = {
 		'/source-code/',
 		[
 			['react/', '1. React'],
-			['koa2/', '2. Koa2'],
+			['redux/', '2. Redux'],
+			['koa2/', '3. Koa2'],
 			['../', '返回主页面'],
 		],
 	),
@@ -25,7 +26,7 @@ module.exports = {
 			['application', '1. 框架入口application'],
 			['koa-compose', '2. koa-compose 中间件机制'],
 			['koa-router-layer', '3. koa-router 路由模块(1)'],
-			['./koa-router-router', '4. koa-router 路由模块(2)'],
+			['koa-router-router', '4. koa-router 路由模块(2)'],
 			['../', '返回上一级'],
 		], 
 	),
@@ -33,6 +34,7 @@ module.exports = {
 		'/source-code/redux/', 
 		[
 			['create-store', '1. createStore 创建Store'], 
+			['compose-middleware', '2. redux中间件机制'],
 			['../', '返回上一级'],
 		], 
 	)
