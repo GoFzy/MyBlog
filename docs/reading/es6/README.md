@@ -2,6 +2,8 @@
 
 **新增数据结构**  
 * [Set 与 WeakSet数据结构](./set-weakset)
+* [Map 与 WeakMap数据结构](./map-weakmap)
+
 
 **异步编程**
 * [Promise对象](./promise)
