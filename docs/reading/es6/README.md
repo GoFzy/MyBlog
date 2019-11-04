@@ -1,5 +1,8 @@
 # ES6 标准入门(第3版)
 
+**扩展属性**
+* [函数的扩展](./function-extend)
+
 **新增数据结构**  
 * [Set 与 WeakSet数据结构](./set-weakset)
 * [Map 与 WeakMap数据结构](./map-weakmap)

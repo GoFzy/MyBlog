@@ -12,6 +12,7 @@ module.exports = {
 	ES6: sidebar.genSidebar(
 		'/reading/es6/', 
 		[
+			['function-extend', '函数的扩展'],
       ['promise', 'Promise对象'],
       ['generator', 'Generator函数'],
 			['async', 'async函数'],
